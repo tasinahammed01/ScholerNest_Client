@@ -43,16 +43,19 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 px-4">
+    <div className="min-h-screen bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
+      {/* Lottie Animation */}
+      <div className="w-full lg:w-1/2 flex justify-center items-center">
+        <DotLottieReact
+          src="https://lottie.host/1032048f-8992-434d-9f44-c9b613e4fe36/XoURIWIcaG.lottie"
+          loop
+          autoplay
+          style={{ width: 250, height: 250 }}
+        />
+      </div>
+
+      {/* Form Section */}
       <div className="w-full max-w-md bg-white shadow-xl rounded-2xl px-8 py-10">
-        <div className="mb-6 flex justify-center">
-          <DotLottieReact
-            src="https://lottie.host/1032048f-8992-434d-9f44-c9b613e4fe36/XoURIWIcaG.lottie"
-            loop
-            autoplay
-            style={{ width: 120, height: 120 }}
-          />
-        </div>
         <h1 className="text-center text-3xl font-bold mb-6 text-gray-700 underline">
           Sign Up
         </h1>
