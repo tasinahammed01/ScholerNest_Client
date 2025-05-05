@@ -78,7 +78,7 @@ const SignUpForm = () => {
               type="text"
               id="name"
               {...register("name", { required: "Name is required" })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 dark:text-black   dark:border-gray-600"
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">
@@ -105,7 +105,7 @@ const SignUpForm = () => {
                   message: "Invalid email address",
                 },
               })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 dark:text-black   dark:border-gray-600"
             />
             {errors.email && (
               <p className="text-red-500 text-sm mt-1">
@@ -132,7 +132,7 @@ const SignUpForm = () => {
                   message: "Password must be at least 6 characters",
                 },
               })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 dark:text-black   dark:border-gray-600"
             />
             {errors.password && (
               <p className="text-red-500 text-sm mt-1">
@@ -157,7 +157,7 @@ const SignUpForm = () => {
                 validate: (value, { password }) =>
                   value === password || "Passwords do not match",
               })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 dark:text-black   dark:border-gray-60"
             />
             {errors.confirmPassword && (
               <p className="text-red-500 text-sm mt-1">
@@ -177,14 +177,14 @@ const SignUpForm = () => {
             <select
               id="role"
               {...register("role", { required: "Please select a role" })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 dark:text-black   dark:border-gray-600"
               defaultValue=""
             >
               <option value="" disabled>
                 Select a role
               </option>
               <option value="student">Student</option>
-              <option value="instructor">Instructor</option>
+              <option value="teacher">Instructor</option>
             </select>
             {errors.role && (
               <p className="text-red-500 text-sm mt-1">
